@@ -40,7 +40,7 @@ const DATA_CONFIG = {
      * @returns {string} Full URL to the data file
      */
     getDataUrl: function(filePath) {
-        return `${this.getDataBaseUrl()}/${filePath}`;
+        return `${this.getDataBaseUrl()}/${filePath}?t=${Date.now()}`;
     }
 };
 
